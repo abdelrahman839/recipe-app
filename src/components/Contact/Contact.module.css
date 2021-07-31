@@ -1,0 +1,36 @@
+.contact_form{
+    background: #000;
+    color: #FFF;
+    width: 70%;
+    border-radius: 20px;
+    padding: 10px 0px !important;
+}
+.contact_form button{
+    background-color: #FFF;
+    color: #000;
+}
+footer{
+    color: #FFF;
+    background-color: #000;
+}
+footer p:hover{
+color: #FFF !important;
+}
+.social:hover{
+    color: #FFF !important;
+}
+.ContactForm{
+    display: none;
+}
+.Footer{
+    display: none;
+}
+@media screen and (max-width:768px){
+    textarea{
+        height: 50px !important;
+    }
+    .contact_form button{
+      width: 100%;
+    }
+}
+

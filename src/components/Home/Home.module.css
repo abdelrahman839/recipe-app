@@ -1,0 +1,104 @@
+header{
+    height: 65vh;
+    margin-top: 8vh !important;
+   position: relative;
+}
+.header_content{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .5);
+}
+.header_content h1{
+    color: #000;
+    font-size: 4.125rem;
+}
+.header_content input{
+    padding: 15px 50px !important;
+    margin-top: 10px !important;
+    width: 40rem;
+    background-color: rgba(255, 255, 255, .7);
+    border: none;
+    font-size: 1.4rem;
+    animation-name: width-animation , opacity-animation ;
+    animation-duration: 1.8s;
+}
+@keyframes opacity-animation {
+    0%{  opacity: 0;}
+    50%{  opacity: 0;}
+    100%{ opacity: 1;}
+}
+@keyframes width-animation {
+    0%{ width: 2rem;}
+    50%{ width: 2rem; }
+}
+.header_content input:focus{
+    background-color: rgba(255, 255, 255, .5);
+   border: none ;
+   outline: none;
+}
+.search_icon{
+    position: absolute;
+    left: 5px;
+    top:1.5rem ;
+    font-size: 2rem;
+    animation-name: opacity-animation ;
+    animation-duration: 1.8s;
+}
+.recipe_img img{
+    border-top-right-radius:5px ;
+    border-top-left-radius:5px ;
+}
+.recipe_content{
+    background-color: #FFF;
+    border-bottom-right-radius:5px ;
+    border-bottom-left-radius:5px ;
+    min-height: 156px;
+    max-height: 156px;
+    
+}
+.recipe_content h4{
+    max-height: 57.6;
+    overflow: hidden;
+}
+.recipe_content button{
+   border: 1px solid #000;
+   color: #000;
+}
+.recipe_content button:hover{
+    border: none;
+    background-color: #000;
+    color: #FFF;
+}
+footer{
+    color: #FFF;
+    background-color: #000;
+}
+footer p:hover{
+color: #FFF !important;
+}
+.social:hover{
+    color: #FFF !important;
+}
+.search_animation{
+    animation-name: search-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes search-animation {
+    0%{transform: translateY(10px);}
+    100%{transform: translateY(-10px);}
+}
+@media screen and (max-width:768px){
+    .header_content input{
+        width: 100%;
+    }
+    .header_content h1{
+        font-size: 3rem;
+    }
+}
